@@ -1,0 +1,105 @@
+html{
+  font-size: 16.25px;
+}
+body{
+  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+main{
+  margin-top: 15px;
+  width: 83%;
+  float: right;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+header{
+  font-size:1.5rem;
+  font-weight: 400;
+}
+
+section .info{
+  padding: 0px 25px;
+  font-size: .85rem;
+}
+
+div.code-container{
+  background-color:rgb(247, 247, 246);
+  height: auto;
+  width: 100%;
+  padding: 5px 20px;
+  
+}
+
+
+.code-container p{
+  margin-top: 6px;
+  font-size: .7rem;
+}
+
+ul.nested-bullets li{
+  margin: 15px 0;
+}
+
+nav#navbar{
+  width: 16%;
+  position: fixed;
+  left:0;
+  top:0;
+  bottom:0;
+  border-right: 3px solid rgb(157, 157, 157);
+  text-align: center;
+}
+nav header{
+  padding:  15px;
+}
+
+nav .links{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+
+}
+.links a{
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 13px;
+  border-top: 1px solid black;
+  font-size: .75rem;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+
+@media (max-width: 1250px) and (min-width: 800px){
+  main{
+    width: 75%;
+  }
+  nav#navbar{
+    width: 22%;
+  }
+  p{
+    font-size : .9rem;
+  }
+  li{
+    font-size : .8rem;
+  }
+ 
+
+}
+
+@media (max-width: 799px){
+  nav#navbar{
+    display: none;
+  }
+
+  p{
+    font-size : 1rem;
+  }
+  li{
+    font-size : .9rem;
+  }
+}
